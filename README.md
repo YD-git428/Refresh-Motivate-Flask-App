@@ -20,7 +20,7 @@ This project demonstrates a Flask web application integrated with Redis for visi
 
    ```bash
    git clone git@github.com:YD-git428/Refresh-Motivate-Flask-App.git
-   cd 
+   cd FlaskApp
    ```
 
 ---
