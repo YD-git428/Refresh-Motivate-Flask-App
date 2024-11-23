@@ -19,8 +19,8 @@ This project demonstrates a Flask web application integrated with Redis for visi
 2. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone git@github.com:YD-git428/Refresh-Motivate-Flask-App.git
+   cd 
    ```
 
 ---
