@@ -1,0 +1,22 @@
+version: "latest"  # Specify the version of Docker Compose
+
+services:
+  web:
+    image: "visitcntr_proj"
+    build: 
+      context: .             # Current directory
+      dockerfile: Dockerfile       # Use this Dockerfile
+    ports:
+      - "7777:7777"                # Map port 7777 on the host to 7777 on the container
+    env_file:
+      - .env
+    depends_on:
+      - "redis"                    # Ensure Redis starts before the web app
+
+  redis:
+    image: "redis:alpine"          # Use the official Redis image
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+    command: ["redis-server", "--requirepass", "${REDIS_PASSWORD}"]
