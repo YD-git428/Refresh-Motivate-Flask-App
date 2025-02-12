@@ -2,6 +2,8 @@
 
 This project demonstrates a Flask web application integrated with Redis for visitor counting and random quote generation. The application is containerized using Docker, with sensitive variables like the Redis password managed securely via environment variables.
 
+<img src="https://github.com/user-attachments/assets/0eae2a95-4900-4394-a140-d1eff728c7ba" alt="Untitled video - Made with Clipchamp (1)" width="750"/>
+
 ---
 
 ## Features
